@@ -30,5 +30,13 @@ Criar as funções que o código irá precisar
     return render(request, "index.html", {'animais': animais})
 
 6 - Abrir o arquivo urls
-    Importar
+    a)Importar
       from . import views  
+
+    b) Incluir a relação entre a função e a página no campo "Urlpatterns"
+    	ex:  path('', views.index, name='index'),
+
+7 - Criar o arquivo html em templates, precisa ser o nome que foi definido no arquivo: Views
+	a)Configurar o arquivo para que os dados sejam apresentados
+
+
